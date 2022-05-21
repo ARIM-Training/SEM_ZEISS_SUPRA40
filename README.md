@@ -1,26 +1,28 @@
-# sem-image-classification-using-CNN
-Colab Notebook for SEM image classificatioin
-And a pathway towards a software for Microsopy in SEM
+# データ構造化　ハンズオン演習 １
 
-# Dataset
-- [Paper Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6111892/)
-- [Dataset Link](http://doi.org/10.23728/b2share.19cc2afd23e34b92b36a1dfd0113a89f)
+## 数値化・可視化編
+サンプルは主に粉体・薄膜用のXRD測定に用いられるリガク（SmartLab）のデータです．ヘッダー部は約470行，数値部が3000行からなるrawデータを数値部のみを
+切り出し，また可視化図（回折図）を作成するデータ構造化をします．
 
-# Downloading Datasets to Google Drive
-- Code to download any file in Google drive
+**目　標**：　データ構造化の中でも最も基本的な**数値部のcsv化**および**可視化**の処理の流れを習得することを目指します．
 
-```
-#importing requests librery
-import requests
-#Download link
-file_url = "https://b2share.eudat.eu/api/files/5fc88ad5-2f13-483c-8b80-a5862c91dbbb/MEMS_devices_and_electrodes.tar"	
-r = requests.get(file_url, stream = True) 
-#Give a name of the for your downloaded file
-with open("/content/gdrive/My Drive/MEMS_devices_and_electrodes.tar", "wb") as file: 
-	for block in r.iter_content(chunk_size = 1024): 
-		if block: 
-			file.write(block)
-```
-- Code to extract data
+**機　種**：　リガク SmartLab  
+**データ**：　ras (テキスト形式)  
 
-```!tar -xvf '/content/gdrive/My Drive/MEMS_devices_and_electrodes.tar' -C '/content/gdrive/My Drive/NANOML/'```
+<br>
+
+<div align="center">                                                                                                                
+<img src="https://user-images.githubusercontent.com/38028745/138789951-01ea1497-be71-437d-bf6e-33c96a9aa8c2.png" width = "800px">
+</div>
+
+<hr>
+
+## 演習コード
+Google Colabでステップ・バイ・ステップで動作を確認しながら進めます．下記のボタンを押して進んでください．
+
+<div align="center">
+  <a href="https://colab.research.google.com/github/ARIM-Training/Training_Program_1/blob/main/Training_1.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+</div>
+
