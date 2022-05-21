@@ -21,8 +21,6 @@
 Google Colabでステップ・バイ・ステップで動作を確認しながら進めます．下記のボタンを押して進んでください．
 
 <div align="center">
-  <a href="https://colab.research.google.com/github/ARIM-Training/Training_Program_1/blob/main/Training_1.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+<a href="https://colab.research.google.com/github/ARIM-Training/SEM_ZEISS_SUPRA40/blob/main/Training_Program10.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 </div>
 
